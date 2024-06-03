@@ -8,9 +8,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      serif: ['Font Name', 'serif'],
-      sans: ['Font Name', 'sans-serif'],
-      body:  ['Font Name', 'sans-serif'],
+      serif: ['meno-banner', 'serif'],
+      sans: ['monotype-grotesque', 'sans-serif'],
     },
     safelist: [
       {

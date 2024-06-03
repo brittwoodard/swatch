@@ -23,7 +23,6 @@
          -moz-osx-font-smoothing: grayscale;
   }
   
-  
   html {
     scroll-behavior: smooth;
   }
@@ -72,3 +71,8 @@
   .nav-items { @apply flex justify-around items-center uppercase font-light tracking-wide; }
 
   .nav-items-col { @apply flex flex-col uppercase tracking-wide }
+
+  /* Images */
+  .bg-image-style {
+    @apply bg-no-repeat bg-cover bg-center
+  }
