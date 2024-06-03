@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans bg-light text-dark font-light overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 { @apply font-serif font-light; }
+}
+
 @layer components {
     .font-italic {
       @apply italic
@@ -22,17 +35,6 @@
          -webkit-font-smoothing: antialiased;
          -moz-osx-font-smoothing: grayscale;
   }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    @apply font-sans text-black font-light overflow-x-hidden;
-  }
-  
-  h1, h2, h3, h4, h5, h6 { @apply font-serif font-light; }
-
 
   .title-lg {   @apply font-serif text-2xl }
   .title-md {  @apply font-serif text-lg   }
