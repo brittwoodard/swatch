@@ -1,0 +1,113 @@
+_inputs:
+  layout:
+    hidden: true
+  text_html: 
+    type: html
+    options:
+      blockquote: false
+      bold: true
+      format: p h3 h4
+      link: true
+      italic: true
+      bulletedlist: true
+  section_spacing:
+    type: select
+    options:
+      values: 
+        p-5 md:p-10: Padded XS
+        p-10 md:p-20: Padded
+        px-10 py-16 md:py-32 md:px-28: Padded XL
+# make sure you use one of these options
+_select_data:
+  video_types:
+  - vimeo
+  - youtube
+  section_colors:
+    bg-light: Light Background
+    bg-dark: Dark Background
+    text-white: Light Text
+    text-black: Dark Text
+page_blocks: []
+_array_structures:
+  page_blocks: 
+  - label: Banner
+    icon: photo_camera
+    value:
+      _id: banner
+      title: Banner Title
+      image: 
+  - label: Call to Action
+    icon: add
+    value:
+      _id: cta
+      title: CTA Type
+      cta: I am a CTA, sign up to me
+      button_text: Button
+      button_url: 
+  - label: Text
+    icon: description
+    value:
+      _id: text
+      text_align: left
+      title_align: left
+      title: Text Block
+      text_html: 
+      column_count: 1
+      section_spacing:
+  - label: Image Text Block
+    icon: description
+    value:
+      _id: image-text
+      title: Image Text Block
+      column_count: 2
+      columns:
+      section_spacing:
+  - label: Image Collage
+    icon: photo_camera
+    value:
+      _id: collage
+      title: Collage 
+      gallery_column_count: 3
+      gallery:
+        - image: 
+        - column-width: 
+        - aspect-ratio: 
+      section_spacing:
+  - label: Masonry Collage
+    icon: photo_camera
+    value:
+      _id: masonry_collage
+      title: Masonry Collage 
+      column_count: 3
+      images:
+        - image: 
+      section_spacing:
+  - label: Video
+    icon: play_circle
+    value:
+      _id: video
+      title: Video
+      video_type:
+      youtube_id:
+      vimeo_id:
+      autoplay: true
+      section_spacing:
+  columns:
+    - label: image
+      icon: photo_camera
+      value:
+          _type: image
+          image:
+          column_width: 1
+    - label: text
+      icon: description
+      value:
+          _type: text
+          text_html: 
+          column_width: 1
+    - label: video
+      icon: play_circle
+      value:
+          _type: video
+          video_path:
+          column_width: 1

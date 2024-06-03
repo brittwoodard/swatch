@@ -1,0 +1,38 @@
+<header class="grid grid-cols-3 border-b border-black relative">
+
+  <div class="hidden lg:grid">
+  
+    <div class="text-center grid min-h-[5vh]">
+      <nav class="nav-items ">
+  
+        {% for item in site.data.navigation.header limit:2 %}
+    
+        <a href="{{item.nav_link}}">{{item.nav_title}}</a>
+  
+        {% endfor %}
+  
+      </nav>
+    </div>
+
+  </div>
+  
+  <div class="lg:col-span-1 col-span-2 p-2 lg:flex lg:justify-center lg:items-center">
+      <a href="/"><img src="/images/brand_logo.png" alt="" class="inline-block object-center object-contain mx-auto m-0 p-0 h-12"></a>
+  </div>
+
+  <div class="hidden lg:grid">
+    
+    <div class="text-center grid min-h-[5vh]">
+      <nav class="nav-items ">
+  
+        {% for item in site.data.navigation.header limit:2 offset:2 %}
+
+          <a href="{{item.nav_link}}">{{item.nav_title}}</a>
+  
+        {% endfor %}
+  
+      </nav>
+    </div>
+  
+  </div>
+</header>
